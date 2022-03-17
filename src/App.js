@@ -6,8 +6,8 @@ import './App.css';
 
 const App = () => {
   const [habitGoals, setHabitGoals] = useState([
-    { text: 'Do all exercises!', id: 'g1' },
-    { text: 'Finish the course!', id: 'g2' }
+    { text: 'Do Yoga', id: 'g1' },
+    { text: 'Practice code', id: 'g2' }
   ]);
 
   const addGoalHandler = enteredText => {
@@ -26,7 +26,7 @@ const App = () => {
   };
 
   let content = (
-    <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
+    <p style={{ textAlign: 'center' }}>Your list is empty!!!</p>
   );
 
   if (habitGoals.length > 0) {
